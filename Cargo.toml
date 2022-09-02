@@ -1,0 +1,16 @@
+[workspace]
+resolver = "2"
+members = ["lib", "polars-dynamic"]
+
+[package]
+name = "{{project-name}}"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+lib = { path = "./lib" }
+hot-lib-reloader = { version = "^0.6", optional = true }
+
+[features]
+default = ["reload"]
+reload = ["dep:hot-lib-reloader"]
