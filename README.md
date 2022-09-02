@@ -1,5 +1,5 @@
 _This is a template for [cargo-generate](https://cargo-generate.github.io/cargo-generate/)._
-_Use with `cargo generate rksm/hot-polars-template`._
+_Use with `cargo generate rksm/polars-hot-reload`._
 
 # {{project-name}}
 
